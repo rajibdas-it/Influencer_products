@@ -171,15 +171,21 @@ nav {
   line-height: 60px;
   color: #0a0826;
 }
+.feat-img img {
+  width: 404px;
+  height: 270px;
+}
 .feat-msg {
   margin: 0;
   margin-left: 96px;
+  text-align: center;
 }
 
 .feat-msg p {
   font-weight: 700;
   font-size: 16px;
   color: #6c6c6c;
+  display: flex;
 }
 .join-btn {
   background-color: #e02c6d;
@@ -206,4 +212,37 @@ footer {
 }
 .social-media-logo img {
   margin: 16px;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .partner-img {
+    width: 100%;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .product-details {
+    grid-template-columns: 1fr;
+  }
+  .featured-item {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .feat-msg {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 480px;
+  }
+  .feat-img img {
+    width: 299px;
+    height: 188px;
+  }
 }
